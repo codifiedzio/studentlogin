@@ -1,0 +1,163 @@
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+	  font: 20px Montserrat, sans-serif;
+	  line-height: 1.8;
+	  color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+	  background-color: #1abc9c; /* Green */
+	  color: #ffffff;
+  }
+  .bg-2 { 
+	  background-color: #474e5d; /* Dark Blue */
+	  color: #ffffff;
+  }
+  .bg-3 { 
+	  background-color: #ffffff; /* White */
+	  color: #555555;
+  }
+  .bg-4 { 
+	  background-color: #2f2f2f; /* Black Gray */
+	  color: #fff;
+  }
+  .container-fluid {
+	  padding-top: 70px;
+	  padding-bottom: 70px;
+  }
+  .navbar {
+	  padding-top: 15px;
+	  padding-bottom: 15px;
+	  border: 0;
+	  border-radius: 0;
+	  margin-bottom: 0;
+	  font-size: 12px;
+	  letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+	  color: #1abc9c !important;
+  }
+  .modal-body{
+  	color:black;
+	text-align:center;
+	font: 20px Montserrat, sans-serif;
+	line-height: 2.0;
+	color: grey;
+  }
+  .modal-header{
+  	color:black;
+  }
+  .login{
+  	cursor:pointer;
+  }
+ 
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>                        
+	  </button>
+	  <a class="navbar-brand" href="#">Cmpany's Logo</a>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="#">About</a></li>
+		<li><a class="login" data-toggle="modal" data-target="#myModal">Login/Signup</a></li>
+		<li><a href="#">Contact</a></li>
+	  </ul>
+	</div>
+  </div>
+</nav>
+ <!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+		  		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		  		<h4 class="modal-title">Login/Signup As : </h4>
+			</div>
+			<div class="modal-body">
+  				<div class="row">
+  					<div class="col-sm-6">
+						<a href="studnetsignup-login.html" target="_blank">
+						<img class="img-circle" alt="W3Schools" src="img_avatar.png" width="100" height="100">
+						</a>
+						<p>Student</p>
+					</div>
+  					<div class="col-sm-4">
+						<a href="samplethemepage.html">
+						<img class="img-circle" alt="W3Schools" src="img_avatar.png" width="100" height="100">
+						</a>
+						<p>Faculty</p>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+		  		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+	  	</div>
+	</div>
+</div>
+  
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Your door towards success!</h3>
+  <img src="study.jpg" class="img-responsive img-circle margin" style="display:inline" alt="img" width="350" height="350">
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">What do we do?</h3>
+  <p>We provide you the platform to choose from the biggest and esteemed institutes so that you can choose among them and give a spark to your carrer.</p><br><br>
+  
+  <p>Know more about us!</p>
+  <a href="#" class="btn btn-default btn-lg">
+	Take a tour
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Success Stories...</h3><br>
+  <div class="row">
+	<div class="col-sm-4">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	  <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+	</div>
+	<div class="col-sm-4"> 
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	  <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+	</div>
+	<div class="col-sm-4"> 
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	  <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+	</div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Know more about us on  <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+</footer>
+
+</body>
+</html>
